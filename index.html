@@ -96,6 +96,21 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
+        .skill-block {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--secondary-color);
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-block:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
     </style>
 </head>
 <body>
@@ -139,12 +154,12 @@
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-cloud me-2"></i>Cloud & DevOps</h5>
                             <div class="mt-3">
-                                <span class="skill-badge">Azure</span>
-                                <span class="skill-badge">AWS</span>
-                                <span class="skill-badge">Kubernetes</span>
-                                <span class="skill-badge">Docker</span>
-                                <span class="skill-badge">Terraform</span>
-                                <span class="skill-badge">Jenkins</span>
+                                <div class="skill-block d-block mb-3 p-3">Azure</div>
+                                <div class="skill-block d-block mb-3 p-3">AWS</div>
+                                <div class="skill-block d-block mb-3 p-3">Kubernetes</div>
+                                <div class="skill-block d-block mb-3 p-3">Docker</div>
+                                <div class="skill-block d-block mb-3 p-3">Terraform</div>
+                                <div class="skill-block d-block mb-3 p-3">Jenkins</div>
                             </div>
                         </div>
                     </div>
